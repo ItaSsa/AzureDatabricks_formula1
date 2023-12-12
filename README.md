@@ -16,7 +16,7 @@ In order to access the user data from storage account, we've created a service a
 
 ## Mounting the paths using Service Authentication
 We've create a Scope on Databricks and one function to use a Service Principal authentication to mount the paths. This way we can use relative paths instead of the whole path using the abfs protocol.
-[Mounting Paths](AzureDatabricks_formula1/environment/1.environment_mount_adls_containers_for_project)
+[Mounting Paths](environment)
 
 ## Files Ingestion
 The ingestion of files were done in separated notebooks. 
@@ -30,5 +30,5 @@ First goal was to create a parquet file with the information that could be consu
 ![Constructors Standings](utilities/constructors_standings.png)
 
 ## The drivers standings file
-We've created a parquet file using the notebook in that was create a rank of drivers using Window funtions. [driver_standings](transformation/1.transforming_driver_standing)
+We've created a parquet file using the notebook 1.transforming_driver_standing.py, in that was create a rank of drivers using Window functions. [driver_standings](transformation)
 
