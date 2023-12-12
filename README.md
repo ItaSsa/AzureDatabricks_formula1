@@ -16,7 +16,7 @@ In order to access the user data from storage account, we've created a service a
 
 ## Mounting the paths using Service Authentication
 We've create a Scope on Databricks and one function to use a Service Principal authentication to mount the paths. This way we can use relative paths instead of the whole path using the abfs protocol.
-[Mounting Paths](environment/1.environment_mount_adls_containers_for_project)
+[Mounting Paths](AzureDatabricks_formula1/environment/1.environment_mount_adls_containers_for_project)
 
 ## Files Ingestion
 The ingestion of files were done in separated notebooks. 
