@@ -14,20 +14,25 @@ We create a Azure Storage account to save user data, and organize it using Medal
 ## Acessing Azure Account Storage from Databricks
 In order to access the user data from storage account, we've created a service aplication and used a Key Vault to save the secrets. 
 This project has this components on databricks :
+
 ![Component architetura on Azure](utilities/project_architeture.png)
 
 ## Mounting the paths using Service Authentication
-We've create a Scope on Databricks and one function to use a Service Principal authentication to mount the paths. This way we can use relative paths instead of the whole path using the abfs protocol.
+We've create a Scope on Databricks and one function to use a Service Principal authentication to mount the paths. This way, we can use relative paths instead of the whole path using the abfs protocol.
+
 [Mounting Paths](environment)
 
 ## Files Ingestion
 The ingestion of the raw files had done in separated notebooks. The files have stored in the processed folder. 
+
 [Ingestion folder](ingestion)
 
 ## Goals of the tranformations
 First goal was to create parquet files that could feed web pages as shown in the next images.
 
+
 ![Drivers Standings](utilities/drivers_standings.png)
+
 
 ![Constructors Standings](utilities/constructors_standings.png)
 
